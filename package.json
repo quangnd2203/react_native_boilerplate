@@ -9,7 +9,7 @@
         "lint:fix": "eslint --fix .",
         "prettier": "prettier --check \"src/**/(*.tsx|*.ts|*.css|*.scss)\"",
         "prettier:fix": "prettier --write \"src/**/(*.tsx|*.ts|*.css|*.scss)\"",
-        "prepare": "husky install",
+        "lint-staged": "lint-staged",
         "start": "react-native start",
         "test": "jest"
     },
@@ -52,15 +52,17 @@
         "react-test-renderer": "19.0.0",
         "typescript": "5.0.4"
     },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
-    },
-    "lint-staged": {
-        "**/*.{ts,tsx,js,jsx}": "eslint --fix"
-    },
     "engines": {
         "node": ">=18"
+    },
+    "lint-staged": {
+        "*.ts": [
+            "npm run lint",
+            "git add ."
+        ],
+        "*.tsx": [
+            "npm run lint",
+            "git add ."
+        ]
     }
 }
