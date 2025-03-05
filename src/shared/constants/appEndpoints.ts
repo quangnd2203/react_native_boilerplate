@@ -1,5 +1,5 @@
 const appEndpoint = {
-    userGetAll: 'api/user/getAll'
+    userGetAll: 'api/user/getAll',
 };
 
 export default appEndpoint;

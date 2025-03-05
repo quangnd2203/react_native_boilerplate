@@ -1,7 +1,7 @@
 const appRouters = {
     splash: '/',
     login: '/login',
-    dashboard: '/dashboard'
+    dashboard: '/dashboard',
 };
 
 export default appRouters;

@@ -11,7 +11,7 @@ const appNetworkConfig = {
 
     connectionTimeout: 30000,
     receiveTimeout: 30000,
-    keyAuthorization: 'Authorization'
+    keyAuthorization: 'Authorization',
 };
 
 export default appNetworkConfig;

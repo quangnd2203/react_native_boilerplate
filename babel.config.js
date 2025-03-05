@@ -13,9 +13,9 @@ module.exports = {
                     domain: './src/domain',
                     infrastructure: './src/infrastructure',
                     navigation: './src/navigation',
-                    shared: './src/shared'
-                }
-            }
-        ]
-    ]
+                    shared: './src/shared',
+                },
+            },
+        ],
+    ],
 };

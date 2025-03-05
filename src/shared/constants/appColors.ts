@@ -7,7 +7,7 @@ const appColors = {
     info: '#17a2b8',
 
     light: '#f8f9fa',
-    dark: '#343a40'
+    dark: '#343a40',
 };
 
 export default appColors;
