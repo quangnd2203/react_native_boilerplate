@@ -1,0 +1,38 @@
+{
+    "extends": "@react-native/typescript-config/tsconfig.json",
+    "include": [
+        "**/*.ts",
+        "**/*.tsx",
+        "@types/env.d.ts",
+        "index.js"
+    ],
+    "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "~/*": [
+                "src/*"
+            ],
+            "assets/*": [
+                "assets/*"
+            ],
+            "application/*": [
+                "src/application/*"
+            ],
+            "interface/*": [
+                "src/interface/*"
+            ],
+            "domain/*": [
+                "src/domain/*"
+            ],
+            "infrastructure/*": [
+                "src/infrastructure/*"
+            ],
+            "navigation/*": [
+                "src/navigation/*"
+            ],
+            "shared/*": [
+                "src/shared/*"
+            ]
+        }
+    }
+}

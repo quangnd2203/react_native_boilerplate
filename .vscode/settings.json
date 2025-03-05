@@ -1,0 +1,10 @@
+{
+    "material-icon-theme.folders.associations": {
+        "domain": "core",
+        "infrastructure": "server",
+        "features": "ui",
+        "redux": "bloc",
+        "usecase": "functions",
+        "entity": "element",
+    }
+}
