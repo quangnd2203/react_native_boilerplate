@@ -1,9 +1,9 @@
-import React from "react";
-import AppNavigator from "application/routes/AppNavigation";
+import React from 'react';
+import AppNavigator from 'application/routes/AppNavigation';
 
-const App = () => {
+function App() {
     return <AppNavigator />;
-    //ssss
-};
+    //ssssssssssssssss
+}
 
 export default App;
