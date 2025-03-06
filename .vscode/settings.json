@@ -1,0 +1,13 @@
+{
+    "material-icon-theme.folders.associations": {
+        "domain": "core",
+        "infrastructure": "server",
+        "features": "ui",
+        "redux": "bloc",
+        "usecase": "functions",
+        "entity": "element",
+    },
+    "files.exclude": {
+        "node_modules": true // ✅ Ẩn node_modules khỏi Explorer
+    }
+}
