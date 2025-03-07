@@ -1,3 +1,11 @@
 [*]
 indent_size = 4
 indent_style = space
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.ts, *.tsx, *.js, *.jsx]
+max_line_length = 120
+quote_type = single
+space_in_parens = false
+curly_brace_spacing = false

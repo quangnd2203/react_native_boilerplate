@@ -9,5 +9,8 @@
     },
     "files.exclude": {
         "node_modules": true // ✅ Ẩn node_modules khỏi Explorer
-    }
+    },
+    "editor.formatOnSave": true,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
 }

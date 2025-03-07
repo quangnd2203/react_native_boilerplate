@@ -1,3 +1,5 @@
+const prettierOptions = require('./.prettierrc.js');
+
 module.exports = {
     root: true,
     extends: ['@react-native', 'prettier'],
@@ -12,22 +14,7 @@ module.exports = {
         '@typescript-eslint/no-unused-vars': 'warn',
         '@typescript-eslint/no-explicit-any': 'off',
         'react-native/no-inline-styles': 'error',
-        'prettier/prettier': [
-            'warn',
-            {
-                arrowParens: 'always',
-                bracketSameLine: true,
-                bracketSpacing: true,
-                singleQuote: true,
-                trailingComma: 'all',
-                semi: true,
-                tabWidth: 4,
-                endOfLine: 'auto',
-                useTabs: false,
-                printWidth: 150,
-                jsxSingleQuote: true,
-            },
-        ],
+        'prettier/prettier': ['warn', prettierOptions],
         'react/function-component-definition': [
             'error',
             {

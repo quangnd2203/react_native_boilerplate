@@ -10,4 +10,5 @@ module.exports = {
     useTabs: false,
     printWidth: 150,
     jsxSingleQuote: true,
+    spaceInParens: true,
 };

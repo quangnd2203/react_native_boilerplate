@@ -5,6 +5,7 @@ import appRouters from './appRoutes';
 import { SplashScreen } from 'application/features/splash';
 import { LoginScreen } from 'application/features/login';
 import { navigationRef } from './navigationAction';
+import { CounterScreen } from '../features/counter';
 
 const Stack = createStackNavigator();
 
@@ -14,6 +15,7 @@ function AppNavigation() {
             <Stack.Navigator screenOptions={{ headerShown: false }}>
                 <Stack.Screen name={appRouters.dashboard} component={SplashScreen} />
                 <Stack.Screen name={appRouters.login} component={LoginScreen} />
+                <Stack.Screen name={appRouters.counter} component={CounterScreen} />
             </Stack.Navigator>
         </NavigationContainer>
     );
