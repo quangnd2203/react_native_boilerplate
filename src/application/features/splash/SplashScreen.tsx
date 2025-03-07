@@ -7,8 +7,8 @@ import { navigate, appRouters } from '~/application/routes';
 function SplashScreen() {
     useEffect(() => {
         setTimeout(() => {
-            navigate({ name: appRouters.counter });
-        }, 3000);
+            navigate({ name: appRouters.product });
+        }, 1000);
     });
     return (
         <View style={styles.container}>

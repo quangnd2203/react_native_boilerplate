@@ -3,6 +3,7 @@ const appRouters = {
     login: '/login',
     dashboard: '/dashboard',
     counter: '/counter',
+    product: '/product',
 } as const;
 
 export default appRouters;
