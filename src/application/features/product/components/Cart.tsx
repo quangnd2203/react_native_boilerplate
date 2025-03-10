@@ -1,7 +1,7 @@
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { useSelector } from 'react-redux';
 import { RootState } from 'src/application/redux/store';
-import { appRouters, navigate } from 'src/application/routes';
+import { appRouters, navigate } from 'application/routes';
 
 function Cart() {
     const cartState = useSelector((state: RootState) => state.cart);
