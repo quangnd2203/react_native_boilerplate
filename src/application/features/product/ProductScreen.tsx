@@ -1,7 +1,9 @@
-import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Product, productMock } from '~/domain/entity';
 import { Cart } from './components';
+import { useDispatch } from 'react-redux';
+import { add } from '~/application/redux/cart';
 
 function ProductScreen() {
     return (
@@ -30,11 +32,17 @@ type ProductItemProps = {
 
 function ProductItem(props: ProductItemProps) {
     const product = props.product;
+    const dispatch = useDispatch();
     return (
-        <View style={styles.productItemView}>
-            <Text style={[styles.productItemText, styles.productItemTextTitle]}>{product.name}</Text>
-            <Text style={[styles.productItemText, styles.productItemTextPrice]}>{product.price}đ</Text>
-        </View>
+        <TouchableOpacity
+            onPress={() => {
+                dispatch(add(product));
+            }}>
+            <View style={styles.productItemView}>
+                <Text style={[styles.productItemText, styles.productItemTextTitle]}>{product.name}</Text>
+                <Text style={[styles.productItemText, styles.productItemTextPrice]}>{product.price}đ</Text>
+            </View>
+        </TouchableOpacity>
     );
 }
 

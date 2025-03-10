@@ -1,4 +1,5 @@
 import Product, { productMock } from './product';
 import CartItem from './cartItem';
 
-export { Product, productMock, CartItem };
+export { productMock };
+export type { CartItem, Product };

@@ -1,12 +1,16 @@
 import { StyleSheet, Text, View } from 'react-native';
+import { useSelector } from 'react-redux';
+import { RootState } from '~/application/redux/store';
 
 function Cart() {
+    const cartState = useSelector((state: RootState) => state.cart);
+
     return (
         <View style={styles.cartContainer}>
             <Text style={styles.cartTitle}>This is your cart</Text>
             <View style={styles.cartView}>
-                <Text style={styles.cartItemText}>10 items</Text>
-                <Text style={styles.cartItemText}>Total: 100$</Text>
+                <Text style={styles.cartItemText}>{cartState.totalItem} items</Text>
+                <Text style={styles.cartItemText}>Total: {cartState.total}$</Text>
             </View>
         </View>
     );
