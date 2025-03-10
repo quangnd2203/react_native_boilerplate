@@ -1,9 +1,9 @@
 import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { Product, productMock } from '~/domain/entity';
+import { Product, productMock } from 'src/domain/entity';
 import { Cart } from './components';
 import { useDispatch } from 'react-redux';
-import { add } from '~/application/redux/cart';
+import { add } from 'src/application/redux/cart';
 
 function ProductScreen() {
     return (

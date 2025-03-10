@@ -1,5 +1,5 @@
 import { createAction, createReducer, PayloadAction } from '@reduxjs/toolkit';
-import { CartItem, Product } from '~/domain/entity';
+import { CartItem, Product } from 'src/domain/entity';
 import CartState, { initialCartState } from './state';
 
 export const add = createAction<Product>('cart/add');

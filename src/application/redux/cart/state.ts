@@ -1,4 +1,4 @@
-import { CartItem } from '~/domain/entity';
+import { CartItem } from 'src/domain/entity';
 
 interface CartState {
     items: CartItem[];

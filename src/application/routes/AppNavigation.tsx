@@ -5,8 +5,8 @@ import appRouters from './appRoutes';
 import { SplashScreen } from 'application/features/splash';
 import { LoginScreen } from 'application/features/login';
 import { navigationRef } from './navigationAction';
-import { CounterScreen } from '../features/counter';
-import { ProductScreen } from '../features/product';
+import { CounterScreen } from 'application/features/counter';
+import { ProductScreen } from 'application/features/product';
 
 const Stack = createStackNavigator();
 

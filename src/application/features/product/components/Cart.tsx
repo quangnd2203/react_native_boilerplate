@@ -1,18 +1,25 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { useSelector } from 'react-redux';
-import { RootState } from '~/application/redux/store';
+import { RootState } from 'src/application/redux/store';
+import { appRouters, navigate } from 'src/application/routes';
 
 function Cart() {
     const cartState = useSelector((state: RootState) => state.cart);
 
     return (
-        <View style={styles.cartContainer}>
+        <TouchableOpacity
+            style={styles.cartContainer}
+            onPress={() => {
+                navigate({
+                    name: appRouters.cart,
+                });
+            }}>
             <Text style={styles.cartTitle}>This is your cart</Text>
             <View style={styles.cartView}>
                 <Text style={styles.cartItemText}>{cartState.totalItem} items</Text>
                 <Text style={styles.cartItemText}>Total: {cartState.total}$</Text>
             </View>
-        </View>
+        </TouchableOpacity>
     );
 }
 

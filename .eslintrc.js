@@ -3,7 +3,7 @@ const prettierOptions = require('./.prettierrc.js');
 module.exports = {
     root: true,
     extends: ['@react-native', 'prettier'],
-    plugins: ['prettier', '@typescript-eslint'],
+    plugins: ['prettier', '@typescript-eslint', 'no-relative-import-paths'],
     parser: '@typescript-eslint/parser',
     parserOptions: {
         ecmaVersion: 'latest',
@@ -15,6 +15,7 @@ module.exports = {
         '@typescript-eslint/no-explicit-any': 'off',
         'react-native/no-inline-styles': 'error',
         'prettier/prettier': ['warn', prettierOptions],
+        'no-relative-import-paths/no-relative-import-paths': ['warn', { allowSameFolder: true }],
         'react/function-component-definition': [
             'error',
             {
